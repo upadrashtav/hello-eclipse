@@ -44,27 +44,27 @@ public class Calculator {
 	}
 		
 	// Simple Divide
-	private static int divide( int left, int right) {
-		return left / right;
+	private static double divide( int left, int right) {
+		return left / (double) right;
 	}
 		
 	// Is a number Even?
 	private static boolean isEven( int number) {
-		return (number % 2 == 0);
+		return number % 2 == 0;
 	}
 		
 	// Is a number Odd?
 	private static boolean isOdd( int number) {
-		return (number % 2 != 0);
+		return number % 2 != 0;
 	}
 		
 	// Is number1 less than number2?
 	private static boolean lt( int number1, int number2) {
-		return (number1 < number2);
+		return number1 < number2;
 	}
 	
 	public static boolean nxor (boolean left, boolean right) {
-		return ((left && right) || !(left && !right));
+		return (left && right) || (!left && !right);
 		/*
 		if (left && right) {
 			return true;
